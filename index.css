@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    
+}
+main{
+    display: flex;
+}
+.left{
+    height: 100vh;
+    width: auto;
+}
+.left>img{
+    width: 100%;
+    height: 100%;
+}
+.right{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex: 1;
+    /* border-bottom-left-radius: 50%; */
+    
+}
+.right > form {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    /* padding-top: -250px; */
+    width: 270px;
+    height: 202.5px;
+    left: 742px;
+    top: 0px;
+}
+.infofill{
+    display: flex;
+    flex-direction: column;
+    
+}
+.infofillalt{
+    display: none;
+}
+input{
+    padding: 16px;
+    padding-left: 40px;
+    border-top: 0;
+    border-right: 0;
+    border-color: #003D61;
+    outline: none;
+}  
+::placeholder { 
+    color: #C4C4C4;
+    opacity: 1;
+}
+label { 
+    color:#003D61;
+    opacity: 1;
+    text-size-adjust: 20px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+.bot1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    margin-right: 40px;
+}
+.toggle {
+    float:left;
+    position : relative ;
+    display : inline-block;
+    width : 40px;
+    height : 24px;
+    background-color:rgba(35, 61, 78, 0.83);
+    border-radius: 30px;    
+}   
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    bottom: 1.9px;
+    left: 0.1px;
+    transition:  all 0.5s;
+}
+.checkbox:checked + .toggle::after {
+    left :20px;
+}
+    
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: rgb(3, 180, 3);
+}      
+/* Checkbox vanished */
+.checkbox {
+    display : none;
+}
+a{
+    color: #ED2980;
+}
+.altbot1{
+    display: none;
+}
+.bot1,.bot2{
+    font: size 16px;
+    font-weight: 600;
+}
+.bot1>p{
+    padding-left: 8px;
+}
+.bot2{
+    padding-right: 25px;
+}
+.socmlogos{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    display: none;
+}
+.signup{
+    display: none;
+}
+
+@media only screen 
+and (device-width: 390px) 
+and (device-height: 844px) 
+and (-webkit-device-pixel-ratio: 3) {
+
+
+.left{
+width:100%;
+height: 35vh;
+position: absolute;
+}
+.left>img{
+width: 100%;
+height: 35vh;
+}
+.right{
+/* display: none; */
+height: 65vh;
+width: 390px;
+padding-top: 500px;
+}
+.logo{
+    padding-top: 20px;
+    height: 10vh;
+}
+.infofill{
+    display: none;
+}
+.infofillalt{
+    display: flex;
+    flex-direction: column;
+    padding-left:10px;
+    padding-right: 10px;
+    
+    
+}
+input{
+    /* padding: 16px; */
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color:#4F4F4F4D;
+    outline: none;
+}  
+::placeholder { 
+    color:#003D61;
+    opacity: 1;
+}
+label { 
+    color:#B8B8B8;
+    opacity: 1;
+    text-size-adjust: 18px;
+}
+a{
+    color:#ED2980;
+}
+.bottom{
+    display: none;
+}
+
+.socmlogos{
+    height: 5vh;
+    width: 100vw;
+}
+button{
+    background-color: #003D61;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 14px 0;
+    border-radius: 6px;
+}
+.signup{
+    justify-content: center;
+}
+}
