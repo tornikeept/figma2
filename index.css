@@ -148,14 +148,19 @@ and (device-height: 844px)
 and (-webkit-device-pixel-ratio: 3) { */
 
 @media only screen and (max-width: 600px) {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .left{
-width:100vw;
+width:100%;
 height: 40vh;
 position: absolute;
 
 }
 main .left > img{
-width: 100vw;
+width: 100%;
 height: 35vh;
 }
 .right{
@@ -210,13 +215,19 @@ a{
 /* main .right form  ეწერა ბათენის წინ და ადრე არ მუშაობდა ახლა ამის გარეშეც მუშაობს */
 button{
     background-color: #003D61;
-    color: black;
-    /* margin-left: 20px;
-    margin-right: 20px;
+    color:whites;
     padding: 14px 0;
     border-radius: 6px;
-    align-items: center; */
+    /* align-items: center;
+    align-content: center; */
     display: flex;
+    /* justify-content: space-around; */
+    padding: 5px 20px;
+    width: 100%;
+}
+.buttonclass{
+    display: flex;
+    justify-content: space-around;
 }
 .signup{
     justify-content: center;
